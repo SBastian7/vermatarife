@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173933172-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-173933172-1');
+</script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f1f94b1c4933c001311e6d7&product=sop' async='async'></script>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper" style="background: #030303;height: 100px;">
+        <a href="{{url_for('index')}}" class="brand-logo"><img src="{{url_for('static',filename='img/400x300.jpg')}}" style="height: 100px;" alt="Logo Matarife"></a>
+        
+      </div>
+    </nav>
+    {% block content %}
+  
+    {% endblock %}
+
+    <footer class="page-footer grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Ver Matarife</h5>
+            <p class="grey-text text-lighten-4">Ver Matarife un lugar donde se pueden ver o descargar los capítulos de la serie web creada por Daniel Mendoza Leal.</p>
+            <p class="grey-text text-lighten-4">El contenido aquí mostrado es propiedad de su creador y el objetivo de esta página es única y exclusivamente para colaborar con su difusión.</p>
+            <p class="grey-text text-lighten-4">Esta es una idea llevada a cabo por una sola persona. Si lo deseas puedes colaborar con donaciones a la manutención del sitio a través del este <a href="https://www.gofundme.com/f/ver-matarife" target="_blank">Link</a></p>
+          </div>
+          <div class="col l5 offset-l1 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://www.gofundme.com/f/ver-matarife">Donaciones</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+            </ul>
+            <h5 class="white-text">Sobre Matarife</h5>
+            <ul>
+              Creado por	Daniel Mendoza Leal <br>
+Guion por	Daniel Mendoza Leal
+Pablo Valdés <br>
+Dirigido por	Jack Nielsen <br>
+Presentado por	Daniel Mendoza Leal <br>
+Narrado por	Daniel Mendoza Leal <br>
+Producido por Emma Thompson para Box Jellyfish Films
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Anoniman © 2020
+        <a class="grey-text text-lighten-4 right" href="https://www.colombiahumana.co/" target="_blank">Por una Colombia en Paz</a>
+        </div>
+      </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

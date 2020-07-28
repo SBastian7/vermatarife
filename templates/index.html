@@ -1,0 +1,183 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row">
+  <div class="col s12 hide-on-med-and-up" style="padding: 0;">
+    <img src="{{url_for('static',filename='img/banner3.jpeg')}}" class="responsive-img" alt="Ver Matarife Banner" srcset="">
+  </div>
+  <div class="col s12 hide-on-small-only hide-on-large-only" style="padding: 0;">
+    <img src="{{url_for('static',filename='img/banner1.jpeg')}}" class="responsive-img" alt="Ver Matarife Banner" srcset="">
+  </div>
+  <div class="col s12 hide-on-med-and-down" style="padding: 0;">
+    <img src="{{url_for('static',filename='img/banner2.jpeg')}}" class="responsive-img" alt="Ver Matarife Banner" srcset="">
+  </div>
+</div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 center">
+        <h1>
+          Matarife: Un genocida innombrable
+        </h1>
+        
+      </div>
+      <div class="col s10 offset-s1 m6 l4">
+        <img src="{{url_for('static',filename='img/daniel.png')}}" alt="Daniel Mendoza Leal" class="responsive-img">
+        <p>Daniel Mendoza Leal - Creador</p>
+      </div>
+      <div class="col s12 m6 l8">
+        <p>
+          Matarife es una serie web creada por el periodista, escritor y abogado colombiano <span style="font-weight: bold;font-style:italic;">Daniel Mendoza Leal</span>.
+        
+        Financiada y producida en Australia, Estados Unidos y Colombia por <span style="font-weight: bold;font-style:italic;">Jack Nielsen</span>. Dirigida por <span style="font-weight: bold;font-style:italic;">Emma thompson</span> para <span style="font-weight: bold;font-style:italic;">Box Jellyfish Films.</span>
+        <br><br>
+        Fue estrenada el 22 de mayo de 2020 mediante canales de difusión masiva siendo un éxito masivo y llegando a ser tendencia en las redes sociales y acumulando 2.5 millones de visualizaciones en menos de 6 horas.
+        <br><br>
+        La serie consta de 50 capítulos los cuales son transmitidos todos los viernes en horas de la noche. Los cuales puedes ver o descargar <a href="#">aquí</a> abajo.
+        <br>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="sharethis-inline-share-buttons"></div>
+    </div>
+        <table class=" centered highlight striped">
+          <thead>
+            <tr>
+              <th>Capítulo</th>
+              <th>Nombre</th>
+              <th>Ver</th>
+              <th>Descargar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>La Granada que activó la élite</td>
+              <td>
+                <a href="{{url_for('view',video='1')}}">
+                  <span class="material-icons">
+                    visibility
+                    </span>
+                </a>
+              </td>
+              <td>
+                <a href="{{url_for('static',filename='videos/es/Matarife-1x1.mp4')}}" id="d1">
+                  <span class="material-icons">
+                    get_app
+                    </span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Corporación Muerte</td>
+              <td>
+                <a href="{{url_for('view',video='2')}}">
+                  <span class="material-icons">
+                    visibility
+                    </span>
+                </a>
+              </td>
+              <td>
+                <a href="{{url_for('static',filename='videos/es/Matarife-1x2.mp4')}}" id="d2">
+                  <span class="material-icons">
+                    get_app
+                    </span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Esquirlas Sociopáticas - Parte 1</td>
+              <td>
+                <a href="{{url_for('view',video='3')}}">
+                  <span class="material-icons">
+                    visibility
+                    </span>
+                </a>
+              </td>
+              <td>
+                <a href="{{url_for('static',filename='videos/es/Matarife-1x3.mp4')}}" id="d3">
+                  <span class="material-icons">
+                    get_app
+                    </span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Esquirlas Sociopáticas - Parte 2</td>
+              <td>
+                <a href="{{url_for('view',video='4')}}">
+                  <span class="material-icons">
+                    visibility
+                    </span>
+                </a>
+              </td>
+              <td>
+                <a href="{{url_for('static',filename='videos/es/Matarife-1x4.mp4')}}" id="d4">
+                  <span class="material-icons">
+                    get_app
+                    </span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Poniendo a volar a la Mafia - Parte 1</td>
+              <td>
+                <a href="{{url_for('view',video='5')}}">
+                  <span class="material-icons">
+                    visibility
+                    </span>
+                </a>
+              </td>
+              <td>
+                <a href="{{url_for('static',filename='videos/es/Matarife-1x5.mp4')}}" id="d5">
+                  <span class="material-icons">
+                    get_app
+                    </span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Poniendo a volar a la Mafia - Parte 2</td>
+              <td>
+                <a href="{{url_for('view',video='6')}}">
+                  <span class="material-icons">
+                    visibility
+                    </span>
+                </a>
+              </td>
+              <td>
+                <a href="{{url_for('static',filename='videos/es/Matarife-1x6.mp4')}}" id="d6">
+                  <span class="material-icons">
+                    get_app
+                    </span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Poniendo a volar a la Mafia - Parte 3</td>
+              <td>
+                <a href="{{url_for('view',video='7')}}">
+                  <span class="material-icons">
+                    visibility
+                    </span>
+                </a>
+              </td>
+              <td>
+                <a href="{{url_for('static',filename='videos/es/Matarife-1x7.mp4')}}" id="d7">
+                  <span class="material-icons">
+                    get_app
+                    </span>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br><br><br>
+  </div>
+{% endblock %}

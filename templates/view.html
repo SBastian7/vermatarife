@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="row">
+  <div class="col s12 hide-on-med-and-up" style="padding: 0;">
+    <img src="{{url_for('static',filename='img/banner3.jpeg')}}" class="responsive-img" alt="Ver Matarife Banner" srcset="">
+  </div>
+  <div class="col s12 hide-on-small-only hide-on-large-only" style="padding: 0;">
+    <img src="{{url_for('static',filename='img/banner1.jpeg')}}" class="responsive-img" alt="Ver Matarife Banner" srcset="">
+  </div>
+  <div class="col s12 hide-on-med-and-down" style="padding: 0;">
+    <img src="{{url_for('static',filename='img/banner2.jpeg')}}" class="responsive-img" alt="Ver Matarife Banner" srcset="">
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    
+  </div>
+  <div class="card">
+    <div class="card-content">
+      
+      <div class="card-title center">
+        
+        {% if video == '1' %}
+          <h4>La granada que activó la élite</h4>
+        {% endif %}
+        {% if video == '2' %}
+          <h4>Corporación Muerte</h4>
+        {% endif %}
+        {% if video == '3' %}
+          <h4>Esquirlas Sociopáticas - Primera Parte</h4>
+        {% endif %}
+        {% if video == '4' %}
+          <h4>Esquirlas Sociopáticas - Segunda Parte</h4>
+        {% endif %}
+        {% if video == '5' %}
+          <h4>Poniendo a volar a la Mafia - Primera Parte</h4>
+        {% endif %}
+        {% if video == '6' %}
+          <h4>Poniendo a volar a la Mafia - Segunda Parte</h4>
+        {% endif %}
+        {% if video == '7' %}
+          <h4>Poniendo a volar a la Mafia - Tercera Parte</h4>
+        
+        {% endif %}
+        <h5>Capítulo {{video}}</h5>
+      </div>
+      <video class="responsive-video" controls>
+        <source src="{{url_for('static',filename='videos/es/Matarife-1x'+video+'.mp4')}}" type="video/mp4">
+      </video>
+      <p> <br>
+        {% if video == '1' %}
+          A Salvatore Mancuso muchos lo vieron al desayuno, terminando su café junto a la piscina, en el último piso del Club el Nogal. Marta Lucía Ramírez se reunía con paramilitares. Aquí te lo contamos.
+        {% else %}
+          Sin descripción
+        {% endif %}
+        
+      </p>
+      <br>
+      <div class="row">
+        <div class="sharethis-inline-share-buttons"></div>
+      </div>
+      <br><br>
+      
+      <div class="row">
+        <div class="col s8 offset-s2 center btn" style="margin-bottom: 5vh;">
+          Ver lista de capítulos
+        </div>
+        <div class="col s6 right-align valign-wrapper">
+          <a href="#">
+            <h5>
+              <i class="small material-icons">
+                skip_previous
+              </i>
+              Capítulo Anterior
+            </h5>
+          </a>
+        </div>
+        <div class="col s6 right-align">
+          <a href="#">
+            <h5>Capítulo Siguiente
+              <span class="small material-icons">
+                skip_next
+                </span></h5>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
