@@ -41,7 +41,24 @@
         {% endif %}
         {% if video == '7' %}
           <h4>Poniendo a volar a la Mafia - Tercera Parte</h4>
-        
+        {% endif %}
+        {% if video == '8' %}
+          <h4>Pistas de entrada de la Mafia Mexicana</h4>
+        {% endif %}
+        {% if video == '9' %}
+          <h4>La sombra en el palacio</h4>
+        {% endif %}
+        {% if video == '10' %}
+          <h4>De donde viene el engendro</h4>
+        {% endif %}
+        {% if video == '11' %}
+          <h4>Lavando y facturando</h4>
+        {% endif %}
+        {% if video == '12' %}
+          <h4>El patrón... del patrón</h4>
+        {% endif %}
+        {% if video == '13' %}
+          <h4>El odio hace al monstruo</h4>
         {% endif %}
         <h5>Capítulo {{video}}</h5>
       </div>
@@ -50,9 +67,46 @@
       </video>
       <p> <br>
         {% if video == '1' %}
-          A Salvatore Mancuso muchos lo vieron al desayuno, terminando su café junto a la piscina, en el último piso del Club el Nogal. Marta Lucía Ramírez se reunía con paramilitares. Aquí te lo contamos.
-        {% else %}
-          Sin descripción
+          <p>A Salvatore Mancuso muchos lo vieron al desayuno, terminando su café junto a la piscina, en el último piso del Club el Nogal. Marta Lucía Ramírez se reunía con paramilitares.</p>
+        {% endif %}
+        {% if video == '2' %}
+          <p>¿Podrían existir casos en los que una persona no ordena directamente un crimen, ni lo planea ni lo ayuda a ejecutar? ¿Puede ser incluso que ni sepa que hubiera cometido pero aún así ser quien tiene el mayor grado de responsabilidad?</p>
+        {% endif %}
+        {% if video == '3' %}
+          <p>El exceso de poder y dinero puede generar patologías en muchas personas.</p>
+        {% endif %}
+        {% if video == '4' %}
+          <p>Un sociópata, a pesar de tener plena consciencia de estar obrando mal, siente que tiene todo el derecho a hacerlo, sin remordimientos. </p>
+        {% endif %}
+        {% if video == '5' %}
+          <p>El primero que denunció al Matarife por mafioso fue el papá del presidente designado por el mismo Álvaro Uribe Vélez, Iván Duque Márquez.
+            ¿Sorprendidos? Pues así fue.</p>
+        {% endif %}
+        {% if video == '6' %}
+          <p>Uribe llega a la Aerocivil a cumplir con su labor y no defrauda a sus socios. 
+            Aquí te lo contamos.</p>
+        {% endif %}
+        {% if video == '7' %}
+          <p>"Te eché tierra como una loca para ver si te borraría. Mientras más tierra te echaba, más presente te tenía".
+          Prohibido olvidar.</p>
+        {% endif %}
+        {% if video == '8' %}
+          <p>Junto al chapaleo de los niños en la piscina del Nogal, el Clan Mafioso de los Cifuentes Villa se reunía en las tardes con importantes empresarios de la élite bogotana y grandes hacendados terratenientes.</p>
+        {% endif %}
+        {% if video == '9' %}
+          <p>Se alcanza a ver la sombra del Matarife, el genocida que a Colombia le da miedo nombrar, metido en su palacio.</p>
+        {% endif %}
+        {% if video == '10' %}
+          <p>Fabio Ochoa, patriarca del cartel, en su libro llamado “Mi vida en el Mundo de los Caballos”, expone detalladamente, como el tronco del árbol genealógico de Uribe Vélez era el mismo del que provenían los Ochoa.</p>
+        {% endif %}
+        {% if video == '11' %}
+          <p>Al Matarife lo parió la mafia. En ella creció y ella lo educó.</p>
+        {% endif %}
+        {% if video == '12' %}
+          <p>Uribe Vélez llega a la alcaldía gracias a que su padre compró sobreevaluada una obra de Arte en una exposición destinada a recaudar fondos para la campaña del presidente Belisario Betancur.</p>
+        {% endif %}
+        {% if video == '13' %}
+          <p>El 14 de Junio de 1983, ingresa un comando guerrillero armado hasta los dientes a la hacienda Guacharacas. Muere asesinado Alberto Uribe Sierra.</p>
         {% endif %}
         
       </p>
@@ -63,11 +117,11 @@
       <br><br>
       
       <div class="row">
-        <div class="col s8 offset-s2 center btn" style="margin-bottom: 5vh;">
+        <a href="{{url_for('index')}}" class="col s8 offset-s2 center btn" style="margin-bottom: 5vh;background:  rgb(75, 0, 0);">
           Ver lista de capítulos
-        </div>
+        </a>
         <div class="col s6 right-align valign-wrapper">
-          <a href="#">
+          <a href="{{url_for('view',video=video|int-1)}}" style="color: rgb(75, 0, 0);">
             <h5>
               <i class="small material-icons">
                 skip_previous
@@ -77,7 +131,7 @@
           </a>
         </div>
         <div class="col s6 right-align">
-          <a href="#">
+          <a href="{{url_for('view',video=video|int+1)}}" style="color: rgb(75, 0, 0);">
             <h5>Capítulo Siguiente
               <span class="small material-icons">
                 skip_next

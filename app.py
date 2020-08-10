@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, session, redirect, request, Response, flash, send_from_directory
+from flask import Flask, render_template, url_for, session, redirect, request, Response, flash, send_from_directory, send_file
 from flask_pymongo import PyMongo, ObjectId
 
 import gridfs   #Imagenes
@@ -28,6 +28,10 @@ def index():
 def download(video):
     flash(u"Descarga iniciada")
     return send_from_directory(UPLOAD_DIRECTORY, video, as_attachment=True)
+
+@app.route('/pwabuilder-sw.js')
+def sw():
+    return app.send_static_file('pwabuilder-sw.js')
 
 @app.route('/view/<video>')
 def view(video):

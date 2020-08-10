@@ -1,0 +1,33 @@
+{
+    "dir": "ltr",
+    "lang": "es",
+    "name": "Ver Matarife",
+    "short_name": "Matarife",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "/",
+    "background_color": "transparent",
+    "theme_color": "transparent",
+    "description": "App creada para la difusión de la serie web Matarife: Un genocida innombrable.",
+    "orientation": "any",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "./img/icon1.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/400x400.jpg",
+            "sizes": "400x400",
+            "type": "image/jpg"
+        },
+        {
+            "src": "./img/icon2.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ],
+    "url": "https://www.vermatarife.tk"
+}

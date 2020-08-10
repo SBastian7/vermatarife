@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173933172-1"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172761462-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-173933172-1');
+  gtag('config', 'UA-172761462-2');
 </script>
+
+<script data-ad-client="ca-pub-8791773544439136" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -17,6 +20,8 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel='manifest' href='{{url_for("static",filename="manifest.json")}}'>
+    <link rel="shortcut icon" href="{{url_for('static',filename='favicon.ico')}}" type="image/x-icon">
 
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f1f94b1c4933c001311e6d7&product=sop' async='async'></script>
   </head>
@@ -71,5 +76,12 @@ Producido por Emma Thompson para Box Jellyfish Films
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module">
+     
+      import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+      const el = document.createElement('pwa-update');
+      document.body.appendChild(el);
+    </script>
   </body>
 </html>
