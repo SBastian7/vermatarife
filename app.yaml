@@ -3,4 +3,8 @@ env: flex
 entrypoint: gunicorn -b :$PORT main:app
 
 runtime_config:
+<<<<<<< HEAD
   python_version: 3
+=======
+  python_version: 3
+>>>>>>> 45b516046cef32cd014d16a982ba3c1cffbce8a2
